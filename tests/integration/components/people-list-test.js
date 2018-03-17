@@ -9,18 +9,8 @@ module('Integration | Component | people-list', function(hooks) {
   test('it renders', async function(assert) {
     // Set any properties with this.set('myProperty', 'value');
     // Handle any actions with this.set('myAction', function(val) { ... });
+    await render(hbs`{{people-list title="Title"}}`);
 
-    await render(hbs`{{people-list}}`);
-
-    assert.equal(this.element.textContent.trim(), '');
-
-    // Template block usage:
-    await render(hbs`
-      {{#people-list}}
-        template block text
-      {{/people-list}}
-    `);
-
-    assert.equal(this.element.textContent.trim(), 'template block text');
+    assert.equal(this.element.textContent.trim(), 'Title');
   });
 });
