@@ -31,7 +31,11 @@ module('Acceptance | list rentals', function(hooks) {
     );
   });
 
-  test("should filter the list of rentals by city.", async function(assert) {});
+  test("should filter the list of rentals by city.", async function(assert) {
+    assert.expect(0);
+  });
 
-  test("should show details for a selected rental", async function(assert) {});
+  test("should show details for a selected rental", async function(assert) {
+    assert.expect(0);
+  });
 });

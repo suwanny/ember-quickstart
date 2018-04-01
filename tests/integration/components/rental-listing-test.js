@@ -41,7 +41,7 @@ module('Integration | Component | rental-listing', function(hooks) {
 
     await click('.image');
     assert.ok(
-      this.this.element.querySelector('.image.wide'),
+      this.element.querySelector('.image.wide'),
       'rendered wide after click'
     );
 
