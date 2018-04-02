@@ -14,6 +14,7 @@ Router.map(function() {
   });
   this.route('scientists');
   this.route('video-player');
+  this.route('object-model');
 });
 
 export default Router;
