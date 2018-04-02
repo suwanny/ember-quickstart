@@ -10,7 +10,7 @@ Router.map(function() {
   this.route('scientists');
   this.route('about');
   this.route('contact');
-  this.route('rentals');
+  this.route('rentals', function() {});
   this.route('video-player');
 });
 
